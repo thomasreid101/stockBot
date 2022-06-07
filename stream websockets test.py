@@ -7,7 +7,6 @@ def on_open(ws):
         "action": "authenticate",
         "data": {"key_id": config.API_KEY, "secret_key": config.SECRET_KEY}
     }
-    print(auth_data)
 
     ws.send(json.dumps(auth_data))
 
